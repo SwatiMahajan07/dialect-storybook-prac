@@ -1,6 +1,7 @@
 import { Alert } from '@mui/material'
 import React from 'react'
 import ErrorIcon from '@mui/icons-material/Error';
+import { theme } from '../../utils/Theme';
 
 interface AlertComponentProps {
   severity?: 'error' | 'warning' | 'info' | 'success'
@@ -13,31 +14,31 @@ const AlertComponent: React.FC<AlertComponentProps> = ({ severity, message }) =>
       severity={severity}
       sx={{
         '&.MuiAlert-standardError': {
-          backgroundColor: '#FEEFEF',
-          color: '#DA1414',
+          backgroundColor: theme.colors.state.background.error,
+          color: theme.colors.state.error,
           '& .MuiAlert-icon': {
-            color: '#DA1414'
+            color: theme.colors.state.error
           }
         },
         '&.MuiAlert-standardWarning': {
-          backgroundColor: '#FFF4EC',
-          color: '#B95000',
+          backgroundColor: theme.colors.state.background.warning,
+          color: theme.colors.state.warning,
           '& .MuiAlert-icon': {
-            color: '#B95000'
+            color: theme.colors.state.warning
           }
         },
         '&.MuiAlert-standardInfo': {
-          backgroundColor: '#EEF2FA',
-          color: '#2E5AAC',
+          backgroundColor: theme.colors.state.background.info,
+          color: theme.colors.state.info,
           '& .MuiAlert-icon': {
-            color: '#2E5AAC'
+            color: theme.colors.state.info
           }
         },
         '&.MuiAlert-standardSuccess': {
-          backgroundColor: '#EDF9F0',
-          color: '#287D3C',
+          backgroundColor: theme.colors.state.background.success,
+          color: theme.colors.state.success,
           '& .MuiAlert-icon': {
-            color: '#287D3C'
+            color: theme.colors.state.success
           }
         }
       }}
