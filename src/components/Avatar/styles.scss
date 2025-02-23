@@ -1,0 +1,27 @@
+.avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: max-content;
+  gap: 5px;
+}
+
+.img-container {
+  position: relative;
+  width: max-content;
+}
+
+.img-rounded-full {
+  border-radius: 50%;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
