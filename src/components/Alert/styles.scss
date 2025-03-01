@@ -1,0 +1,48 @@
+@import "../../utils/_variables.scss";
+
+.alert {
+  width: $percentage-40;
+  justify-self: center;
+}
+
+@media screen and (max-width: $breakpoint-tablet) {
+  .alert {
+    width: $percentage-90;
+  }
+}
+
+.alert > .MuiAlert-message {
+  line-height: $line-height-22;
+}
+
+.alert > .MuiAlert-standardError {
+  background-color: $color-state-background-error;
+  color: $color-state-error;
+  .MuiAlert-icon {
+    color: $color-state-error;
+  }
+}
+
+.alert > .MuiAlert-standardWarning {
+  background-color: $color-state-background-warning;
+  color: $color-state-warning;
+  .MuiAlert-icon {
+    color: $color-state-warning;
+  }
+}
+
+.alert > .MuiAlert-standardInfo {
+  background-color: $color-state-background-info;
+  color: $color-state-info;
+  .MuiAlert-icon {
+    color: $color-state-info;
+  }
+}
+
+.alert > .MuiAlert-standardSuccess {
+  background-color: $color-state-background-success;
+  color: $color-state-success;
+  .MuiAlert-icon {
+    color: $color-state-success;
+  }
+}

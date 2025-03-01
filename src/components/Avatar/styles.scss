@@ -6,7 +6,7 @@
   justify-content: center;
   flex-direction: row;
   width: max-content;
-  gap: 5px;
+  gap: $size-5;
 }
 
 .img-container {
@@ -15,15 +15,33 @@
 }
 
 .img-rounded-full {
-  border-radius: 50%;
+  border-radius: $percentage-50;
 }
 
 .badge {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -$size-3;
+  right: -$size-3;
+  border-radius: $percentage-50;
+  background-color: $color-state-error;
+}
+
+.badge-small {
+  width: $size-6;
+  height: $size-6;
+}
+
+.badge-medium {
+  width: $size-7;
+  height: $size-7;
+}
+
+.badge-large {
+  width: $size-8;
+  height: $size-8;
+}
+
+.badge-xlarge {
   width: $size-10;
   height: $size-10;
-  border-radius: 50%;
-  background-color: $color-state-error;
 }
