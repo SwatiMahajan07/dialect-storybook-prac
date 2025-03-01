@@ -18,6 +18,26 @@
   border-radius: $percentage-50;
 }
 
+.img-small {
+  width: $image-size-small;
+  height: $image-size-small;
+}
+
+.img-medium {
+  width: $image-size-medium;
+  height: $image-size-medium;
+}
+
+.img-large {
+  width: $image-size-large;
+  height: $image-size-large;
+}
+
+.img-xlarge {
+  width: $image-size-xlarge;
+  height: $image-size-xlarge;
+}
+
 .badge {
   position: absolute;
   top: -$size-3;
@@ -44,4 +64,49 @@
 .badge-xlarge {
   width: $size-10;
   height: $size-10;
+}
+
+.username {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: $font-weight-semibold;
+}
+
+.username-small {
+  font-size: $font-size-desktop-paragraph-tiny;
+  line-height: $line-height-desktop-paragraph-tiny;
+}
+
+.username-medium {
+  font-size: $font-size-desktop-paragraph-xsmall;
+  line-height: $line-height-desktop-paragraph-xsmall;
+}
+
+.username-large {
+  font-size: $font-size-desktop-paragraph-small;
+  line-height: $line-height-desktop-paragraph-small;
+}
+
+.username-xlarge {
+  font-size: $font-size-desktop-paragraph-base;
+  line-height: $line-height-desktop-paragraph-base;
+}
+
+.caret-down-small {
+  width: $size-16;
+  height: $size-16;
+}
+
+.caret-down-medium {
+  width: $size-20;
+  height: $size-20;
+}
+
+.caret-down-large {
+  width: $size-24;
+  height: $size-24;
+}
+
+.caret-down-xlarge {
+  width: $size-24;
+  height: $size-24;
 }
