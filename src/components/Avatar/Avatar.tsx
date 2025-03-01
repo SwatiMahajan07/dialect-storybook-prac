@@ -53,7 +53,7 @@ const AvatarComponent: React.FC<AvatarComponentProps> = ({
           }
           className={`img-rounded-full`}
         />
-        {hasBadge && <div className="badge"></div>}
+        {hasBadge && <div className={`badge badge-${size}`}></div>}
       </div>
       {hasUsername && <div className="username">{username}</div>}
       {hasCaretMenu && (

@@ -1,8 +1,7 @@
 import { Alert } from "@mui/material";
 import React from "react";
 import ErrorIcon from "@mui/icons-material/Error";
-import { theme } from "../../utils/Theme";
-
+import "./styles.scss";
 interface AlertComponentProps {
   severity?: "error" | "warning" | "info" | "success";
   message: string;
@@ -15,36 +14,7 @@ const AlertComponent: React.FC<AlertComponentProps> = ({
   return (
     <Alert
       severity={severity}
-      sx={{
-        "&.MuiAlert-standardError": {
-          backgroundColor: theme.colors.state.background.error,
-          color: theme.colors.state.error,
-          "& .MuiAlert-icon": {
-            color: theme.colors.state.error,
-          },
-        },
-        "&.MuiAlert-standardWarning": {
-          backgroundColor: theme.colors.state.background.warning,
-          color: theme.colors.state.warning,
-          "& .MuiAlert-icon": {
-            color: theme.colors.state.warning,
-          },
-        },
-        "&.MuiAlert-standardInfo": {
-          backgroundColor: theme.colors.state.background.info,
-          color: theme.colors.state.info,
-          "& .MuiAlert-icon": {
-            color: theme.colors.state.info,
-          },
-        },
-        "&.MuiAlert-standardSuccess": {
-          backgroundColor: theme.colors.state.background.success,
-          color: theme.colors.state.success,
-          "& .MuiAlert-icon": {
-            color: theme.colors.state.success,
-          },
-        },
-      }}
+      className={`alert`}
       icon={<ErrorIcon />}
       onClose={() => {}}
     >
