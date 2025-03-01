@@ -1,8 +1,7 @@
 import React from "react";
-import { theme } from "../../utils/Theme";
 import "./styles.scss";
 import defaultAvatar from "../../assets/images/avatar-default.jpg";
-import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
+import caretDown from "../../assets/images/caret-down.svg";
 
 interface AvatarComponentProps {
   size?: "small" | "medium" | "large" | "xlarge";
@@ -26,50 +25,17 @@ const AvatarComponent: React.FC<AvatarComponentProps> = ({
   return (
     <div className="avatar-container">
       <div className="img-container">
-        <img
-          src={src}
-          alt={alt}
-          width={
-            size === "small"
-              ? theme.imageSizes.small
-              : size === "medium"
-              ? theme.imageSizes.medium
-              : size === "large"
-              ? theme.imageSizes.large
-              : size === "xlarge"
-              ? theme.imageSizes.xlarge
-              : 0
-          }
-          height={
-            size === "small"
-              ? theme.imageSizes.small
-              : size === "medium"
-              ? theme.imageSizes.medium
-              : size === "large"
-              ? theme.imageSizes.large
-              : size === "xlarge"
-              ? theme.imageSizes.xlarge
-              : 0
-          }
-          className={`img-rounded-full`}
-        />
+        <img src={src} alt={alt} className={`img-rounded-full img-${size}`} />
         {hasBadge && <div className={`badge badge-${size}`}></div>}
       </div>
-      {hasUsername && <div className="username">{username}</div>}
+      {hasUsername && (
+        <div className={`username username-${size}`}>{username}</div>
+      )}
       {hasCaretMenu && (
-        <ArrowDropDownRoundedIcon
-          sx={{
-            fontSize:
-              size === "small"
-                ? theme.pixelSizes[16]
-                : size === "medium"
-                ? theme.pixelSizes[20]
-                : size === "large"
-                ? theme.pixelSizes[24]
-                : size === "xlarge"
-                ? theme.pixelSizes[24]
-                : 0,
-          }}
+        <img
+          src={caretDown}
+          alt="Caret Down"
+          className={`caret-down-${size}`}
         />
       )}
     </div>
