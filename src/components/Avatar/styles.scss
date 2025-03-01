@@ -1,0 +1,29 @@
+@import "../../utils/variables";
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: max-content;
+  gap: 5px;
+}
+
+.img-container {
+  position: relative;
+  width: max-content;
+}
+
+.img-rounded-full {
+  border-radius: 50%;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: $size-10;
+  height: $size-10;
+  border-radius: 50%;
+  background-color: $color-state-error;
+}

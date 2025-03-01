@@ -1,0 +1,168 @@
+// Colors
+// Primary Colors
+$color-primary-100: #e86c00ff;
+$color-primary-90: #e86c00e6;
+$color-primary-80: #e86c00cc;
+$color-primary-70: #e86c00b3;
+$color-primary-60: #e86c0099;
+$color-primary-50: #e86c0080;
+$color-primary-40: #e86c0066;
+$color-primary-30: #e86c004d;
+$color-primary-20: #e86c0033;
+$color-primary-10: #e86c001a;
+
+// Secondary Colors
+$color-secondary-100: #fdcc4aff;
+$color-secondary-90: #fdcc4ae6;
+$color-secondary-80: #fdcc4acc;
+$color-secondary-70: #fdcc4ab3;
+$color-secondary-60: #fdcc4a99;
+$color-secondary-50: #fdcc4a80;
+$color-secondary-40: #fdcc4a66;
+$color-secondary-30: #fdcc4a4d;
+$color-secondary-20: #fdcc4a33;
+$color-secondary-10: #fdcc4a1a;
+
+// Neutral Colors
+$color-neutral-black: #000000;
+$color-neutral-white: #ffffff;
+$color-neutral-gray-1: #2c3a4b;
+$color-neutral-gray-2: #394452;
+$color-neutral-gray-3: #545d69;
+$color-neutral-gray-4: #6d7580;
+$color-neutral-gray-5: #858c94;
+$color-neutral-gray-6: #a5abb3;
+$color-neutral-gray-7: #dadee3;
+$color-neutral-gray-8: #ebeef2;
+$color-neutral-gray-9: #f4f6f9;
+
+// State Colors
+$color-state-error: #da1414;
+$color-state-warning: #b95000;
+$color-state-info: #2e5aac;
+$color-state-success: #287d3c;
+$color-state-background-error: #feefef;
+$color-state-background-warning: #fff4ec;
+$color-state-background-info: #eef2fa;
+$color-state-background-success: #edf9f0;
+
+// Action Colors
+$color-action-primary-default: #e86c00;
+$color-action-primary-hover: #cc5f00;
+$color-action-primary-active: #b25300;
+$color-action-primary-disabled: #e86c0080;
+$color-action-primary-hover10: #cc5f001a;
+$color-action-primary-active20: #b2530033;
+
+$color-action-secondary-default: #19ab4f;
+$color-action-secondary-hover: #0c9e42;
+$color-action-secondary-active: #009236;
+$color-action-secondary-disabled: #19ab4f80;
+$color-action-secondary-hover10: #0c9e421a;
+$color-action-secondary-active20: #00923633;
+
+$color-action-neutral-default: #9098a1;
+$color-action-neutral-hover: #858c94;
+$color-action-neutral-active: #798087;
+$color-action-neutral-disabled: #9098a180;
+$color-action-neutral-hover10: #858c941a;
+$color-action-neutral-active20: #79808733;
+
+$color-action-inverted: #ffffff;
+$color-action-visited: #5e38ba;
+
+// Accent Colors
+$color-accent-1-base: #ecb2f2;
+$color-accent-1-alpha: #ecb2f247;
+$color-accent-2-base: #2d6a6a;
+$color-accent-2-alpha: #2d6a6a1a;
+$color-accent-3-base: #e9ad8c;
+$color-accent-3-alpha: #e9ad8c3b;
+$color-accent-4-base: #221874;
+$color-accent-4-alpha: #2218741a;
+$color-accent-5-base: #7cc6d6;
+$color-accent-5-alpha: #7cc6d640;
+$color-accent-6-base: #e1604d;
+$color-accent-6-alpha: #e1604d26;
+
+// Breakpoints
+$breakpoint-mobile: 0px;
+$breakpoint-tablet: 576px;
+$breakpoint-desktop: 1200px;
+
+// Typography
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+
+// Display Typography
+$font-display-large-size-desktop: 69px;
+$font-display-large-size-tablet: 51px;
+$font-display-large-size-mobile: 41px;
+$font-display-large-line-height-desktop: 76px;
+$font-display-large-line-height-tablet: 56px;
+$font-display-large-line-height-mobile: 48px;
+
+$font-display-small-size-desktop: 57px;
+$font-display-small-size-tablet: 44px;
+$font-display-small-size-mobile: 36px;
+$font-display-small-line-height-desktop: 64px;
+$font-display-small-line-height-tablet: 48px;
+$font-display-small-line-height-mobile: 40px;
+
+// Action Typography
+$font-button-large-size: 18px;
+$font-button-large-line-height: 28px;
+$font-button-medium-size: 16px;
+$font-button-medium-line-height: 24px;
+$font-button-small-size: 14px;
+$font-button-small-line-height: 20px;
+
+$font-link-large-size: 20px;
+$font-link-large-line-height: 28px;
+$font-link-medium-size: 16px;
+$font-link-medium-line-height: 24px;
+$font-link-small-size: 14px;
+$font-link-small-line-height: 20px;
+
+// Pixel Sizes
+$size-10: 10px;
+$size-12: 12px;
+$size-14: 14px;
+$size-16: 16px;
+$size-20: 20px;
+$size-24: 24px;
+$size-32: 32px;
+$size-40: 40px;
+$size-48: 48px;
+
+// Image Sizes
+$image-size-small: 24px;
+$image-size-medium: 32px;
+$image-size-large: 40px;
+$image-size-xlarge: 48px;
+
+// Mixins for responsive typography
+@mixin responsive-font-size($desktop, $tablet, $mobile) {
+  font-size: $mobile;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: $tablet;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    font-size: $desktop;
+  }
+}
+
+@mixin responsive-line-height($desktop, $tablet, $mobile) {
+  line-height: $mobile;
+
+  @media (min-width: $breakpoint-tablet) {
+    line-height: $tablet;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    line-height: $desktop;
+  }
+}
