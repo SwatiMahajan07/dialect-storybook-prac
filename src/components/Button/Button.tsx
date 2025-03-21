@@ -1,4 +1,4 @@
-import { styled } from "@mui/material";
+import { Box, styled, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import React from "react";
 import { theme } from "../../utils/Theme";
@@ -156,8 +156,6 @@ const ButtonComponent = ({
       variant={variant}
       size={size}
       disabled={disabled}
-      disableRipple={true}
-      disableTouchRipple={true}
       disableElevation={!rounded}
       sx={
         typeof buttonContent !== "string"
@@ -168,7 +166,44 @@ const ButtonComponent = ({
       }
       onClick={onClick}
     >
-      {buttonContent}
+      {typeof buttonContent === "string" ? (
+        <Typography
+          sx={{
+            fontSize:
+              size === "small"
+                ? theme.typography.action.button.small
+                : size === "medium"
+                ? theme.typography.action.button.medium
+                : theme.typography.action.button.large,
+          }}
+        >
+          {buttonContent}
+        </Typography>
+      ) : (
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            "& > svg": {
+              width:
+                size === "small"
+                  ? theme.pixelSizes[20]
+                  : size === "medium"
+                  ? theme.pixelSizes[24]
+                  : theme.pixelSizes[28],
+              height:
+                size === "small"
+                  ? theme.pixelSizes[20]
+                  : size === "medium"
+                  ? theme.pixelSizes[24]
+                  : theme.pixelSizes[28],
+            },
+          }}
+        >
+          {buttonContent}
+        </Box>
+      )}
     </CustomButton>
   );
 };
