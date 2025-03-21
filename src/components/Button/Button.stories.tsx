@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import ButtonComponent from "./Button";
-import AddIcon from "@mui/icons-material/Add";
+import AddRoundedIcon from "@mui/icons-material/AddRounded";
 
 const meta: Meta<typeof ButtonComponent> = {
   title: "Components/Button",
@@ -66,7 +66,7 @@ export const WithIcon: Story = {
   args: {
     variant: "contained",
     color: "primary",
-    buttonContent: <AddIcon />,
+    buttonContent: <AddRoundedIcon />,
     size: "medium",
     disabled: false,
     rounded: false,
@@ -100,6 +100,17 @@ export const Rounded: Story = {
     variant: "contained",
     color: "primary",
     buttonContent: "Button",
+    size: "medium",
+    disabled: false,
+    rounded: true,
+  },
+};
+
+export const RoundedWithIcon: Story = {
+  args: {
+    variant: "contained",
+    color: "primary",
+    buttonContent: <AddRoundedIcon/>,
     size: "medium",
     disabled: false,
     rounded: true,
