@@ -216,12 +216,21 @@ $size-10: 10px;
 $size-11: 11px;
 $size-12: 12px;
 $size-14: 14px;
+$size-15: 15px;
 $size-16: 16px;
 $size-20: 20px;
 $size-24: 24px;
+$size-30: 30px;
 $size-32: 32px;
 $size-40: 40px;
 $size-48: 48px;
+$size-50: 50px;
+$size-80: 80px;
+$size-100: 100px;
+$size-200: 200px;
+$size-300: 300px;
+$size-500: 500px;
+$size-700: 700px;
 
 // Percentages
 $percentage-100: 100%;
@@ -268,3 +277,24 @@ $image-size-xlarge: 48px;
     line-height: $desktop;
   }
 }
+
+// Elevation/Shadows
+// Tight Shadows
+$elevation-tight-1: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+$elevation-tight-2: 0px 1.25px 4px 0px rgba(0, 0, 0, 0.25);
+$elevation-tight-3: 0px 2px 6px 0px rgba(0, 0, 0, 0.22);
+$elevation-tight-4: 0px 2px 7px 0px rgba(0, 0, 0, 0.24);
+$elevation-tight-5: 0px 3px 12px 0px rgba(0, 0, 0, 0.2);
+$elevation-tight-6: 0px 3.5px 14px 0px rgba(0, 0, 0, 0.2);
+$elevation-tight-7: 0px 7px 18px 0px rgba(0, 0, 0, 0.17);
+$elevation-tight-8: 0px 12px 28px 0px rgba(0, 0, 0, 0.2);
+$elevation-tight-9: 0px 13px 36px 0px rgba(0, 0, 0, 0.22);
+
+// Fluffy Shadows
+$elevation-fluffy-1: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+$elevation-fluffy-2: 0px 6.25px 20px 0px rgba(0, 0, 0, 0.125);
+$elevation-fluffy-3: 0px 10px 30px 0px rgba(0, 0, 0, 0.11);
+$elevation-fluffy-4: 0px 10px 35px 0px rgba(0, 0, 0, 0.12);
+$elevation-fluffy-5: 0px 15px 60px 0px rgba(0, 0, 0, 0.12);
+$elevation-fluffy-6: 0px 17.5px 70px 0px rgba(0, 0, 0, 0.12);
+$elevation-fluffy-7: 0px 35px 90px 0px rgba(0, 0, 0, 0.135);
