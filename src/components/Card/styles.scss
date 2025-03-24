@@ -1,0 +1,122 @@
+@import "../../utils/variables";
+
+.card-div {
+  background-color: $color-neutral-white;
+  border-radius: $size-8;
+  font-family: "Source Sans 3", sans-serif;
+  overflow: hidden;
+  box-shadow: $elevation-tight-3;
+}
+
+.card-content-section {
+  margin: $size-15;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: $size-10;
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+}
+
+.card-image {
+  max-width: $size-300;
+  object-fit: cover;
+}
+
+.image-icon {
+  margin: $size-20;
+  max-width: $size-80;
+  max-height: $size-80;
+  border-radius: $size-4;
+}
+
+.card-leading {
+  color: $color-neutral-gray-2;
+  font-size: $font-size-desktop-small-caps-large;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-header {
+  color: $color-neutral-black;
+  font-size: $font-size-desktop-heading-5;
+  font-weight: $font-weight-semibold;
+  margin: 0;
+}
+
+.card-subHeader {
+  color: $color-neutral-gray-2;
+  font-size: $font-size-desktop-small-caps-large;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-description {
+  color: $color-neutral-gray-2;
+  font-size: $font-size-desktop-paragraph-small;
+  font-weight: $font-weight-normal;
+  margin: 0;
+}
+
+.tag-top-list-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: $percentage-100;
+}
+
+.tag-bottom-list-wrapper,
+.tag-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: $size-10;
+}
+
+.tag-background {
+  background-color: $color-state-background-info;
+  border-radius: $size-4;
+  width: max-content;
+  max-width: $size-30;
+  padding: $size-5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tag {
+  color: $color-state-info;
+  font-size: $font-size-desktop-paragraph-base;
+  font-weight: $font-weight-semibold;
+}
+
+.price {
+  color: $color-neutral-black;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-desktop-heading-6;
+  margin: 0;
+}
+
+.action-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: $size-50;
+  width: $percentage-100;
+}
+
+.cta-button-div {
+  display: flex;
+  gap: $size-5;
+}
+
+.last-updated {
+  color: $color-neutral-gray-2;
+  font-size: $font-size-desktop-paragraph-small;
+  font-weight: $font-weight-normal;
+  margin: 0;
+}
